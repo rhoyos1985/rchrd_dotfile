@@ -1,0 +1,53 @@
+alias c='clear'
+alias .='pwd'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias t='./vendor/bin/phpunit'
+alias clean='artisan cache:clear && artisan view:clear && artisan clear-compiled && artisan route:clear && artisan config:clear && artisan config:cache && artisan route:cache'
+alias path='echo $PATH | tr -s ":" "\n"'
+
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+alias rmds="find . -type f -name '*.DS_Store' -ls -delete"
+
+alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;echo "✌️ DNS flushed"'
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+alias -g @="| grep -i"
+
+alias openNvimRyseF="nvim ~/Documents/Coinme/repositories/ryse/frontend/ryse-frontend"
+alias openNvimRyseB="nvim ~/Documents/Coinme/repositories/ryse/backend/ryse_api"
+alias openNvimCommonPipeline="nvim ~/Documents/Coinme/repositories/ryse/common-pipelines"
+alias openRyseApi="code ~/Documents/Coinme/repositories/ryse/backend/ryse_api"
+alias openRyseFrd="code ~/Documents/Coinme/repositories/ryse/frontend/ryse-frontend"
+alias openRyseCusVer="code ~/Documents/Coinme/repositories/ryse/backend/customer-verification"
+alias openNvimWalletFrontend="nvim ~/Documents/Coinme/repositories/cx/wallet-frontend"
+alias openNvimCommonPipelineCX="nvim ~/Documents/Coinme/repositories/cx/commons-pipeline"
+alias openAppsConfig="nvim ~/Documents/Coinme/repositories/backend-services/app-configs"
+
+alias gotoRyseF="cd ~/Documents/Coinme/repositories/ryse/frontend/ryse-frontend"
+alias gotoRyseB="cd ~/Documents/Coinme/repositories/ryse/backend/ryse_api"
+alias gotoCommonPipeline="cd ~/Documents/Coinme/repositories/ryse/common-pipelines"
+alias gotoRyseCusVer="cd ~/Documents/Coinme/repositories/ryse/backend/customer-verification"
+alias gotoWalletFrontend="cd ~/Documents/Coinme/repositories/cx/wallet-frontend"
+alias gotoCommonPipelineCX="cd ~/Documents/Coinme/repositories/cx/commons-pipeline"
+alias gotoAppsConfig="cd ~/Documents/Coinme/repositories/backend-services/app-configs"
+
+alias tmuxNewSesion="tmux new -s"
+alias tmuxDetach="tmux detach"
+alias tmuxls="tmux ls"
+alias tmuxAttach="tmux attach -t"
+
+# yabai alias
+alias yabaiStart="yabai --start-service"
+alias yabaiRestart="yabai --restart-service"
+alias yabaiStop="yabai --stop-service"
+
+# skhd alias
+alias skhdStart="skhd --start-service"
+alias skhdRestart="skhd --restart-service"
+alias skhdStop="skhd --stop-service"
+
